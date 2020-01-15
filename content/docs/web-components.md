@@ -60,3 +60,8 @@ customElements.define('x-search', XSearch);
 >
 >This code **will not** work if you transform classes with Babel. See [this issue](https://github.com/w3c/webcomponents/issues/587) for the discussion.
 >Include the [custom-elements-es5-adapter](https://github.com/webcomponents/polyfills/tree/master/packages/webcomponentsjs#custom-elements-es5-adapterjs) before you load your web components to fix this issue.
+
+Given some of the fundamental differences between React and Web Components, using them together usually doesn't come without some tweaking and tuning in order to align React's Virtual DOM and Web Component's Shadow DOM.
+  
+There is an independent new project, [Direflow](https://direflow.io/), that provides a small framework for using React together with Web Components and strive to make the process smooth and effortless.  
+Direflow is based on [Create React App](https://create-react-app.dev/docs/getting-started/) and the setup will feel very familiar.
